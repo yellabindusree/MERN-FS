@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form</title>
+</head>
+<body>
+  <div><a href="./index.html">Back to Index Page</a></div>
+
+<form method="POST">
+  Full Name: <input type="text" name="fullname" required><br><br>
+  
+  Username: <input type="text" name="username" pattern="[A-Za-z]+" title="Only letters are allowed" required><br><br>
+  
+  Password: <input type="password" name="password" pattern="[A-Za-z0-9]+" title="Alphanumeric characters only" required><br><br>
+  
+  Re Password: <input type="password" name="repassword" pattern="[A-Za-z0-9]+" title="Alphanumeric characters only" required><br><br>
+  
+  Address: <input type="text" name="address" pattern="[A-Za-z0-9\s,.-]+" title="Letters, numbers, and symbols are allowed" required><br><br>
+  
+  Age: <input type="text" name="age"  title="Enter a valid age" required><br><br>
+  
+  Gender: 
+  <select name="gender" required>
+    <option value="">Select gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="trans">Trans</option>
+    <option value="not_specify">Rather Not Specify</option>
+  </select>
+  <br><br>
+  
+  <input type="submit" value="Save">
+</form>
+
+</body>
+</html>
